@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(226 220 232);
+  background-color: rgb(255, 255, 255);
   direction: rtl;
   font-family: tahoma;
 }
@@ -18,13 +18,49 @@ li {
 a {
   text-decoration: none;
 }
+.contain {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.log-out > svg {
+  width: 35px;
+}
+.support {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #d4cbcb;
+  color: #988f8f;
+  border-radius: 20px;
+  padding: 2px 8px;
+  gap: 8px;
+}
+.support > svg {
+  width: 25px;
+}
+.logo {
+  width: 50%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.logo > img {
+  width: 100%;
+}
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   gap: 20px;
 }
 .user-name,
@@ -35,9 +71,9 @@ a {
   justify-content: center;
   width: 100%;
 }
-.user-name > input::placeholder {
+/* .user-name > input::placeholder {
   color: red;
-}
+} */
 .user-name > input,
 button,
 .password > input,
@@ -45,10 +81,16 @@ button {
   width: 90%;
   text-align: center;
   border-radius: 20px;
-  border: none;
+  border: 2px solid #d4cbcb;
+  padding: 8px;
   outline: none;
   padding: 5px;
-  /* border: 1px solid red */
+}
+.user-name > input.active {
+  border: 1px solid red;
+}
+.password > input.active {
+  border: 1px solid red;
 }
 .user-name > label {
   opacity: 0;
@@ -70,6 +112,7 @@ button {
   background-color: #0977ff;
   color: #fff;
   font-size: 15px;
+  border: none;
 }
 .bam-button {
   border: 1px solid #0977ff;
