@@ -126,13 +126,13 @@ button {
 }
 .links {
   width: 90%;
-  max-width: 280px;
+  max-width: 400px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .links > a {
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   color: #0977ff;
 }

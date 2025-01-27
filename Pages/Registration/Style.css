@@ -48,12 +48,10 @@ a {
   width: 90%;
   max-width: 400px;
 }
-.container > h6 {
+.container > h5 {
   width: 90%;
   max-width: 400px;
   text-align: center;
-  font-size: 10px;
-  font-weight: 600;
   padding: 10px;
 }
 .container > button {
